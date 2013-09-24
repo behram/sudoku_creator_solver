@@ -192,6 +192,6 @@ function solve($sudoku){
 }
  
 $sudoku = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
- //$sudooku is any sudoku can add left to right, if there are empty areas, you can fill with 0.
+ //$sudoku is any sudoku can add left to right, if there are empty areas, you can fill with 0.
 solve($sudoku);
 ?>
