@@ -1,6 +1,5 @@
 <?
 
-
 function return_row($cell){
     return floor($cell/9);
 }
@@ -132,8 +131,7 @@ function remove_attempt($attempt_array,$number){
     }
     return $new_array;
 }
-        
- 
+
 function print_possible($possible){
     $html = "<table bgcolor = \"#ff0000\" cellspacing = \"1\" cellpadding = \"2\">";
     for($x=0;$x<=8;$x++){
@@ -161,8 +159,7 @@ function next_random($possible){
     }
     return $min_choices;
 }
-    
- 
+
 function solve($sudoku){
     $start = microtime();
     $saved = array();    
@@ -192,6 +189,7 @@ function solve($sudoku){
 }
  
 $sudoku = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
- //$sudoku is any sudoku can add left to right, if there are empty areas, you can fill with 0.
+
+//$sudoku is any sudoku can add left to right, if there are empty areas, you can fill with 0.
 solve($sudoku);
 ?>
