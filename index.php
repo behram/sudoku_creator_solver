@@ -1,4 +1,4 @@
-<?
+<?php
 
 function return_row($cell){
     return floor($cell/9);
